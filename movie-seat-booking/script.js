@@ -23,7 +23,11 @@ function updateSelectedCount() {
     return [...seats].indexOf(seat);
   });
 
-  console.log(seatIndex);
+  // Save to local storage
+  // Stringify because seatIndex is an array
+  localStorage.setItem('selectedSeats', JSON.stringify(seatIndex));
+
+  // console.log(seatIndex);
 
   // Now count the selected seats by calculating nodes
   const selectedSeatsCount = selectedSeats.length;
