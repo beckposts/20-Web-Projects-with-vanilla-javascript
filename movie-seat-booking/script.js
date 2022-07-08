@@ -13,6 +13,18 @@ function updateSelectedCount() {
   const selectedSeats = document.querySelectorAll('.row .seat.selected');
   //console.log(selectedSeats); this will give nodes
 
+  // Save Selected Seats to localstorage
+  //  1. Copy selected seats into array
+  //  2. Map through array
+  //  3. Return a new array indexes
+
+  // Copy everything of selectedSeats seatIndex array
+  const seatIndex = [...selectedSeats].map(function (seat) {
+    return [...seats].indexOf(seat);
+  });
+
+  console.log(seatIndex);
+
   // Now count the selected seats by calculating nodes
   const selectedSeatsCount = selectedSeats.length;
   //   console.log(selectedSeatsCount);
