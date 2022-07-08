@@ -34,6 +34,7 @@ body {
 
 .container {
   perspective: 1000px;
+  margin-bottom: 30px;
 }
 
 .seat {
@@ -103,4 +104,12 @@ body {
   margin: 15px 0;
   transform: rotateX(-45deg);
   box-shadow: 0 3px 10px rgb(255, 255, 255, 0.7);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
 }
