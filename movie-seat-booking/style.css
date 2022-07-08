@@ -70,3 +70,24 @@ body {
 .row {
   display: flex;
 }
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 5px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
